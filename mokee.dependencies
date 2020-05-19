@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_vendor_meizu_sm8250-common",
+    "target_path": "vendor/meizu/sm8250-common"
+  }
+]
