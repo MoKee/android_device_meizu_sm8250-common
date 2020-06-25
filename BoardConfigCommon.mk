@@ -98,7 +98,7 @@ BUILD_WITHOUT_VENDOR := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop $(COMMON_PATH)/system_meizu.prop
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
