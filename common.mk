@@ -48,6 +48,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    mokee.livedisplay@2.0-init.sh \
+    mokee.livedisplay@2.0-service-meizu_kona
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/media_profiles_vendor.xml

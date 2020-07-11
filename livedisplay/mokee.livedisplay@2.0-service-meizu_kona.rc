@@ -1,0 +1,11 @@
+service livedisplay-hal-2-0-meizu_kona /system/bin/hw/mokee.livedisplay@2.0-service-meizu_kona
+    class late_start
+    user system
+    group system
+
+on post-fs-data
+    mkdir /data/vendor/display
+    chown system system /data/vendor/display
+
+on property:sys.boot_completed=1
+    exec - system system -- /system/bin/mokee.livedisplay@2.0-init.sh
