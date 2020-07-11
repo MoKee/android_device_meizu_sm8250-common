@@ -60,6 +60,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_PACKAGES += \
+    NQNfcNci \
+    Tag \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
+    libsn100nfc-nci \
+    libsn100nfc_nci_jni
+
+PRODUCT_BOOT_JARS += \
+    com.nxp.nfc.nq
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
